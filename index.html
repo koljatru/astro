@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Астрология</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <a class="logo" href="#">
+            <picture class="logo__img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
+              <img src="images/logo.png" alt="">
+            </picture>
+          </a>
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a class="social__list-link" href="#">
+                <img class="social__list-img" src="images/wats-up-icon-red.svg">
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-link" href="#">
+                <img class="social__list-img" src="images/facebook-icon-red.svg">
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-link" href="#">
+                <img class="social__list-img" src="images/insta-icon-red.svg">
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-link" href="#">
+                <img class="social__list-img" src="images/telegram-icon-red.svg">
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-link" href="#">
+                <img class="social__list-img" src="images/telegram-icon-red.svg">
+              </a>
+            </li>
+          </ul>
+          <div class="header__info">
+            <a class="header__phone" href="tel:79274501300">+7 (927) 450-13-00</a>
+            <div class="header__text">
+              <img src="images/" alt="">
+              <p class="header__work">Ежедневно без выходных с 09:00 до 21:00</p>
+            </div>
+          </div>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">О себе</a>
+            </li>
+            <li class="header__menu-item header__menu-drop">
+              <a class="header__menu-link" href="#">Программы и услуги</a>
+              <ul class="header__menu-drop-menu">
+                <li class="header__menu-drop-item">
+                  <a class="header__menu-drop-link" href="#">Super Jump</a>
+                </li>
+                <li class="header__menu-drop-item">
+                  <a class="header__menu-drop-link" href="#">Астрология</a>
+                </li>
+                <li class="header__menu-drop-item">
+                  <a class="header__menu-drop-link" href="#">Психология</a>
+                </li>
+                <li class="header__menu-drop-item">
+                  <a class="header__menu-drop-link" href="#">Кросс функциональность</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Партнеры</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Отзывы</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <span></span>
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">
+            <b>АСТРОЛОГИЧЕСКАЯ</b><br>
+            КОНСУЛЬТАЦИЯ
+          </h1>
+          <p class="header__text header__desc">Астрологическая консультация<span><br>это твоя инвестиция в свое
+              настоящее будущее</span></p>
+          <button class="header__btn">Пройдите Экспресс-тест!</button>
+        </div>
+        <div class="header__box">
+          <div class="header__box-item">
+            <img class="header__box-img" src="images/skill-1.png">
+            <p class="header__box-text">Раскройте свое
+              <b>предназначение</b>
+            </p>
+          </div>
+          <div class="header__box-item">
+            <img class="header__box-img" src="images/skill-2.png">
+            <p class="header__box-text">Станьте <b>уверенее</b></p>
+          </div>
+          <div class="header__box-item">
+            <img class="header__box-img" src="images/skill-3.png">
+            <p class="header__box-text">Сделайте<br><b>правильный выбор</b></p>
+          </div>
+        </div>
+        <div class="header__quetions"></div>
+        <div class="header__answer">
+          <h2 class="header__answer-title">
+            На какие вопросы
+            <span>Я отвечаю?</span>
+          </h2>
+          <div class="header__answer-items">
+            <div class="header__answer-item">
+              <img class="header__answer-img" src="images/family.png" alt="">
+              <p class="header__answer-name">Семья</p>
+              <ul class="header__answer-list">
+                <li class="header__answer-list__item">
+                  Как гармонизировать отношения?
+                </li>
+                <li class="header__answer-list__item">
+                  Как найти партнера?
+                </li>
+                <li class="header__answer-list__item">
+                  Как наладить отношения с детьми?
+                </li>
+              </ul>
+            </div>
+            <div class="header__answer-item">
+              <img class="header__answer-img" src="images/carier.png" alt="">
+              <p class="header__answer-name">Карьера</p>
+              <ul class="header__answer-list">
+                <li class="header__answer-list__item">
+                  Нужно ли менять профессию?
+                </li>
+                <li class="header__answer-list__item">
+                  Какие риски бизнеса надо учесть?
+                </li>
+                <li class="header__answer-list__item">
+                  Какой из периодов наиболее благоприятен для заключения сделки?
+                </li>
+              </ul>
+            </div>
+            <div class="header__answer-item">
+              <img class="header__answer-img" src="images/scales.png" alt="">
+              <p class="header__answer-name">Сложный выбор</p>
+              <ul class="header__answer-list">
+                <li class="header__answer-list__item">
+                  В какой ВУЗ поступать?
+                </li>
+                <li class="header__answer-list__item">
+                  В каком городе жить?
+                </li>
+                <li class="header__answer-list__item">
+                  Карьера в найме, или свой бизнес?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      <section class="tszi">
+        <div class="container">
+          <div class="tszi__content">
+            <h3 class="tszi__title">
+              Что такое <span>Ба Цзы?</span>
+            </h3>
+            <p class="tszi__text">
+              <span>Одна из самых точных предсказательных систем в мире.</span><br>
+              И это не гадание на кофейной гуще или на картах, это даже не экстрасенсорика
+              (дарованные свыше способности), <span>а вполне стройная, логичная система,
+                создаваемая и изучаемая веками, на основе наблюдений.<br></span>
+              <span>Искусство БА-ЦЗЫ появилось более 3000 лет назад.</span> Оно бережно хранилось напротяжении столетий
+              китайскими
+              мудрецами.
+            </p>
+            <button class="tszi__btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="progress">
+        <div class="container">
+          <div class="progress__inner">
+            <h3 class="progress__title">
+              Мои достижения<span>в Ба-Цзы</span>
+            </h3>
+            <div class="progress__man"></div>
+            <div class="progress__top">
+              <div class="progress__top-item progress__top-item-1">
+                <div class="progress__top-number progress__top-number-1">
+                  <p>01</p>
+                </div>
+                <div class="progress__top-desc progress__top-desc-1">
+                  <p>Рассчитываю астрологические карты Ба Цзы и Ци Мэнь Дунь Цзя на основании методологии Великого
+                    мастера
+                    Джозефа Ю. Методология Джозефа Ю. отличается своей математической точностью
+                    подсказывающей человеку ориентир для
+                    максимально эффективной самореализации</p>
+                </div>
+              </div>
+              <div class="progress__top-item progress__top-item-2">
+                <div class="progress__top-number progress__top-number-2">
+                  <p>02</p>
+                </div>
+                <div class="progress__top-desc progress__top-desc-2">
+                  <p>Финансовый результат моих клиентов<br>
+                    после консультации по Ба Цзы это увеличение
+                    дохода в 2,5 раза</p>
+                </div>
+              </div>
+              <div class="progress__top-item progress__top-item-3">
+                <div class="progress__top-number progress__top-number-3">
+                  <p>03</p>
+                </div>
+                <div class="progress__top-desc progress__top-desc-3">
+                  <p>Профессиональный результат моих клиентов
+                    после консультации по Ба Цзы это переход
+                    из работы в найме до собственника своего
+                    бизнеса</p>
+                </div>
+              </div>
+              <div class="progress__top-item progress__top-item-4">
+                <div class="progress__top-number progress__top-number-4">
+                  <p>04</p>
+                </div>
+                <div class="progress__top-desc progress__top-desc-4">
+                  <p>Мой личный финансовый результат<br>
+                    с начала применения Ба Цзы и Ци Мэнь Дунь Цзя это увеличение своего дохода более чем
+                    в 4 раза</p>
+                </div>
+              </div>
+            </div>
+            <div class="progress__middle">
+              <div class="progress__middle-item">
+                <h4 class="progress__middle-title">с 2015 года</h4>
+                <p class="progress__middle-text">Занимаюсь расчетом
+                  и консультированием
+                  по картам Ба Цзы</p>
+              </div>
+              <div class="progress__middle-item">
+                <h4 class="progress__middle-title">>50 клиентов</h4>
+                <p class="progress__middle-text">По всей России</p>
+              </div>
+              <div class="progress__middle-item">
+                <h4 class="progress__middle-title">с 2020 года</h4>
+                <p class="progress__middle-text">Занимаюсь расчетом и консультированием по картам Ци Мэнь Дунь Цзя</p>
+              </div>
+            </div>
+            <div class="progress__bottom">
+              <h4 class="progress__bottom-title">Вы сможете,<br><span>После моего курса</span>
+              </h4>
+              <div class="progress__bottom-items">
+                <div class="progress__bottom-item">
+                  <img class="progress__bottom-img" src="images/progress-icon-1.svg" alt="">
+                  <div class="progress__bottom-text progress__bottom-text-1">
+                    <span>Гармонизировать</span>
+                    <p>внутренее состояние</p>
+                  </div>
+                </div>
+                <div class="progress__bottom-item">
+                  <img class="progress__bottom-img" src="images/progress-icon-2.svg" alt="">
+                  <div class="progress__bottom-text progress__bottom-text-2">
+                    <span>Минимизировать</span>
+                    <p>риски</p>
+                  </div>
+                </div>
+                <div class="progress__bottom-item">
+                  <img class="progress__bottom-img" src="images/progress-icon-3.svg" alt="">
+                  <div class="progress__bottom-text progress__bottom-text-3">
+                    <span>Открыть</span>
+                    <p>новые возможности</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <div class="map__inner">
+            <h3 class="map__title">
+              Составление<span>Натальной карты</span>
+            </h3>
+            <div class="map__items">
+              <div class="map__item map__item-1">
+                <p class="map__item-text">
+                  Самореализация
+                </p>
+              </div>
+              <div class="map__item map__item-2">
+                <p class="map__item-text">
+                  Финаносовые
+                  возможности
+                </p>
+              </div>
+              <div class="map__item map__item-3">
+                <p class="map__item-text">
+                  Карьера
+                </p>
+              </div>
+              <div class="map__item map__item-4">
+                <p class="map__item-text">
+                  Отношения
+                  с близкими
+                </p>
+              </div>
+              <div class="map__item map__item-5">
+                <p class="map__item-text">
+                  Смена работы
+                </p>
+              </div>
+              <div class="map__item map__item-6">
+                <p class="map__item-text">
+                  Переезд
+                </p>
+              </div>
+              <div class="map__item map__item-7">
+                <p class="map__item-text">
+                  Подача резюме
+                </p>
+              </div>
+            </div>
+            <div class="compilation">
+              <div class="compilation__items">
+                <div class="compilation__item">
+                  <img class="compilation__item-img compilation__item-women" src="images/girl.png" alt="">
+                  <div class="compilation__item-box compilation__item-left">
+                    <h4 class="compilation__item-title">Составление</h4>
+                    <p class="compilation__item-text">Личной натальной карты Ба Цзы
+                      и Ци Мэнь Дунь Цзя</p>
+                  </div>
+                </div>
+                <div class="compilation__item">
+                  <img class="compilation__item-img compilation__item-people" src="images/para.png" alt="">
+                  <div class="compilation__item-box compilation__item-right">
+                    <h4 class="compilation__item-title">Составление</h4>
+                    <p class="compilation__item-text">Натальной карты Ба Цзы и Ци Мэнь Дунь Цзя на совместимость
+                      партнеров в семье и бизнесе</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sale">
+        <div class="container">
+          <div class="sale__inner">
+            <div class="sale__title">
+              <p>Действует акция</p>
+              <span>СКИДКА<b>50%</b></span>
+            </div>
+            <button class="sale__btn">ЗАПОЛНИТЬ АНКЕТУ</button>
+            <div class="sale__items">
+              <div class="sale__item">
+                <img class="sale__item-img" src="images/sale-img-1.png" alt="">
+                <div class="sale__item-box">
+                  <p class="sale__item-text">
+                    Пары находящиеся накануне бракосочетания
+                  </p>
+                </div>
+              </div>
+              <div class="sale__item">
+                <img class="sale__item-img" src="images/sale-img-2.png" alt="">
+                <div class="sale__item-box">
+                  <p class="sale__item-text">
+                    Семейная пара имеет право
+                    пройти тренинг со скидкой 50% от стоимости участия для второго участника тренинга
+                  </p>
+                </div>
+              </div>
+              <div class="sale__item">
+                <img class="sale__item-img" src="images/sale-img-3.png" alt="">
+                <div class="sale__item-box">
+                  <p class="sale__item-text">
+                    Выпускникам школ перед
+                    поступлением в ВУЗ
+                  </p>
+                </div>
+              </div>
+              <div class="sale__item">
+                <img class="sale__item-img" src="images/sale-img-4.png" alt="">
+                <div class="sale__item-box">
+                  <p class="sale__item-text">
+                    В день рождение
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="variants">
+        <div class="container">
+          <h3 class="variants__title">
+            Варианты<span>Консультирования</span>
+          </h3>
+          <div class="variants__inner">
+            <div class="variants__item">
+              <p class="variants__item-text">Составление карты
+                Ба Цзы на 1 человека
+                с последующей
+                консультацией
+              </p>
+              <div class="variants__item-box">
+                <p class="variants__item-price">9 000 <span>руб.</span></p>
+                <button class="variants__btn variants__btn-1">Купить</button>
+              </div>
+            </div>
+            <div class="variants__item">
+              <p class="variants__item-text">Составление карты Ци Мэнь Дунь Цзя на 1 человека с последующей
+                консультацией
+              </p>
+              <div class="variants__item-box">
+                <p class="variants__item-price">12 000 <span>руб.</span></p>
+                <button class="variants__btn variants__btn-2">Купить</button>
+              </div>
+            </div>
+            <div class="variants__item">
+              <p class="variants__item-text">Составление карты Ба Цзы на 2 человека и проверкой их на совместимость с
+                последующей консультацией
+              </p>
+              <div class="variants__item-box">
+                <p class="variants__item-price">16 000 <span>руб.</span></p>
+                <button class="variants__btn variants__btn-3">Купить</button>
+              </div>
+            </div>
+            <div class="variants__item">
+              <p class="variants__item-text">Составление карты Ци Мэнь Дунь Цзя на 2-ух человек и проверкой их
+                на совместимость
+                с последующей консультацией
+              </p>
+              <div class="variants__item-box">
+                <p class="variants__item-price">20 000 <span>руб.</span></p>
+                <button class="variants__btn variants__btn-4">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consult">
+        <div class="container">
+          <h3 class="consult__title">
+            Как проходит консультация
+          </h3>
+          <div class="consult__inner">
+            <a class="consult__popup-play" data-fancybox href="https://youtu.be/85NFw58T3UM">
+              <img class="consult__popup-img" src="images/video-img.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <picture class="logo__img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
+              <img src="images/logo-black.png" alt="">
+            </picture>
+          </a>
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#">
+                <img class="footer__social-img" src="images/wats-up-footer.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#">
+                <img class="footer__social-img" src="images/facebook-footer.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#">
+                <img class="footer__social-img" src="images/insta-footer.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#">
+                <img class="footer__social-img" src="images/telegram-footer.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#">
+                <img class="footer__social-img" src="images/email-footer.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="footer__info">
+            <a class="footer__phone" href="tel:79274501300">+7 (927) 450-13-00</a>
+            <p class="footer__text">Ежедневно без выходных с 09:00 до 21:00</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">Гармония Твоего Развития © 2021</div>
+          <ul class="footer__bottom-list">
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">Договор оферты</a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">Согласие на обработку данных</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
