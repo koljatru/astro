@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -98,7 +97,7 @@
           </h1>
           <p class="header__text header__desc">Астрологическая консультация<span><br>это твоя инвестиция в свое
               настоящее будущее</span></p>
-          <button class="header__btn">Пройдите Экспресс-тест!</button>
+          <button class="header__btn"  data-modal-button="modal-1">Пройдите Экспресс-тест!</button>
         </div>
         <div class="header__box">
           <div class="header__box-item">
@@ -191,7 +190,7 @@
               китайскими
               мудрецами.
             </p>
-            <button class="tszi__btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+            <button class="tszi__btn" data-modal-button="modal-1">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
           </div>
         </div>
       </section>
@@ -372,7 +371,7 @@
               <p>Действует акция</p>
               <span>СКИДКА<b>50%</b></span>
             </div>
-            <button class="sale__btn">ЗАПОЛНИТЬ АНКЕТУ</button>
+            <button class="sale__btn" data-modal-button="modal-1">ЗАПОЛНИТЬ АНКЕТУ</button>
             <div class="sale__items">
               <div class="sale__item">
                 <img class="sale__item-img" src="images/sale-img-1.png" alt="">
@@ -427,7 +426,7 @@
               </p>
               <div class="variants__item-box">
                 <p class="variants__item-price">9 000 <span>руб.</span></p>
-                <button class="variants__btn variants__btn-1">Купить</button>
+                <button class="variants__btn variants__btn-1" data-modal-button="modal-1">Купить</button>
               </div>
             </div>
             <div class="variants__item">
@@ -436,7 +435,7 @@
               </p>
               <div class="variants__item-box">
                 <p class="variants__item-price">12 000 <span>руб.</span></p>
-                <button class="variants__btn variants__btn-2">Купить</button>
+                <button class="variants__btn variants__btn-2" data-modal-button="modal-1">Купить</button>
               </div>
             </div>
             <div class="variants__item">
@@ -445,7 +444,7 @@
               </p>
               <div class="variants__item-box">
                 <p class="variants__item-price">16 000 <span>руб.</span></p>
-                <button class="variants__btn variants__btn-3">Купить</button>
+                <button class="variants__btn variants__btn-3" data-modal-button="modal-1">Купить</button>
               </div>
             </div>
             <div class="variants__item">
@@ -455,7 +454,7 @@
               </p>
               <div class="variants__item-box">
                 <p class="variants__item-price">20 000 <span>руб.</span></p>
-                <button class="variants__btn variants__btn-4">Купить</button>
+                <button class="variants__btn variants__btn-4" data-modal-button="modal-1">Купить</button>
               </div>
             </div>
           </div>
@@ -468,15 +467,47 @@
             Как проходит консультация
           </h3>
           <div class="consult__inner">
-            <a class="consult__popup-play" data-fancybox href="https://youtu.be/85NFw58T3UM">
-              <img class="consult__popup-img" src="images/video-img.jpg" alt="">
+            <a class="consult__popup-play" data-fancybox href="#">
+              <img class="consult__popup-img" src="images/video-img.jpg" alt="" style="margin: 0 auto;">
             </a>
           </div>
         </div>
       </section>
     </main>
   </div>
-
+  <div class="overlay hidden" data-modal id="modal-1">
+    <div class="modal modal__window">
+      <div class="modal__close" data-modal-close>
+        <img class="modal__close-img" src="images/close.png" alt="">
+      </div>
+      <form class="modal__form" action="#">
+        <label class="modal__form-label">
+          Ваше имя
+          <span>*</span>
+        </label>
+        <input class="modal__form-input" type="text" placeholder="Ваше имя">
+        <label class="modal__form-label">
+          Номер телефона
+          <span>*</span>
+        </label>
+        <input class="modal__form-input" type="tel:" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+        <label class="modal__form-label">
+          Ваш E-mail
+        </label>
+        <input class="modal__form-input" type="email" placeholder="Ваш E-mail">
+        <div class="modal__form-menu">
+          <select class="request__sale-select modal__form-select">
+            <option value="1">Программа:</option>
+            <option value="2">Super-jump</option>
+            <option value="3">Астрология</option>
+            <option value="4">Психология</option>
+            <option value="4">Кросс-функциональность</option>
+          </select>
+        </div>
+        <button class="modal__form-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -538,6 +569,7 @@
   </footer>
 
   <script src="js/main.min.js"></script>
+
 </body>
 
 </html>
